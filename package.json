@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ssimmons122/14-MVC-TechBlog/issues"
   },
-  "homepage": "https://github.com/ssimmons122/14-MVC-TechBlog#readme"
+  "homepage": "https://github.com/ssimmons122/14-MVC-TechBlog#readme",
+  "dependencies": {
+    "mysql2": "^3.2.4"
+  }
 }
