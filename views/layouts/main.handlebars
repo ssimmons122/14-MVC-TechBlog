@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techie McBlogFace</title>
-    <!--stylesheets-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/style.css">
 </head>
-
 <body>
-    <header id="navheader" class="text-black">
+    <header id="navheader" class="text-white">
         <section></section>
         {{#if loggedIn}}
             <a href="/">Home</a>
-            <a href=""
+            <a href="/dashboard">Dashboard</a>
+            <a href="/api/users/logout">Logout</a>
+        {{else}}
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/login">Login</a>
+        {{/if}}  
+    </header>
+    <main>
+        {{{body}}}
+    </main>
 </body>
+</html>
